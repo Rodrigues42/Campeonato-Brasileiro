@@ -3,10 +3,10 @@
         <template v-slot:default>
             <thead>
                 <tr>
-                    <th class="text-left">
+                    <th colspan="2" class="text-left">
                         Clube
                     </th>
-                    <th class="text-left">
+                    <th class="text-right">
                         Pontos
                     </th>
                 </tr>
@@ -19,7 +19,7 @@
                     <td>{{ index + 1}}</td>
                     <td>
                         <v-avatar size="20">
-                            <img src="time.escudo" alt="time.nome"/>
+                            <img :src="time.escudo" :alt="time.nome"/>
                         </v-avatar>
                         <span>{{ time.nome }}</span>
                     </td>
