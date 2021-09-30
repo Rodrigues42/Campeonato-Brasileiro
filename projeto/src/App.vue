@@ -1,10 +1,9 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Inicio</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
 <style>
