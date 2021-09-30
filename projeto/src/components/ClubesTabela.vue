@@ -13,11 +13,17 @@
             </thead>
             <tbody>
                 <tr
-                    v-for="item in desserts"
-                    :key="item.name"
+                    v-for="(time, index) in times"
+                    :key="time.id"
                 >
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.calories }}</td>
+                    <td>{{ index + 1}}</td>
+                    <td>
+                        <v-avatar size="20">
+                            <img src="time.escudo" alt="time.nome"/>
+                        </v-avatar>
+                        <span>{{ time.nome }}</span>
+                    </td>
+                    <td class="text-right">{{ time.pontos }}</td>
                 </tr>
             </tbody>
         </template>
@@ -26,9 +32,13 @@
 
 <script>
 export default {
-    data() {
-        
-    },
+    name: ClubesTabela,
+    props: {
+        times: {
+            type: Array,
+            required: true
+        }
+    }
 }
 </script>
 
