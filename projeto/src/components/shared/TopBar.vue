@@ -7,11 +7,11 @@
         Campeonato Brasileiro ⚽
         </v-toolbar-title>
     </v-app-bar>
-    ​
+
     <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list nav dense>
         <v-list-item-group v-model="group" active-class="green--text text--lighten-2">
-    ​
+
             <v-list-item>
             <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
@@ -20,7 +20,7 @@
                 Início
             </v-list-item-title>
             </v-list-item>
-    ​
+
             <v-list-item>
             <v-list-item-icon>
                 <v-icon>mdi-account</v-icon>
@@ -29,13 +29,13 @@
                 Classificação
             </v-list-item-title>
             </v-list-item>
-    ​
+
         </v-list-item-group>
         </v-list>
     </v-navigation-drawer>
     </div>
 </template>
-​
+
 <script>
 export default {
   name: 'AppTopBar',
