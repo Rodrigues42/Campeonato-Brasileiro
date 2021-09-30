@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: ClubesTabela,
+    name: 'ClubesTabela',
     props: {
         times: {
             type: Array,
