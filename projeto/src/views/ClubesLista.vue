@@ -11,7 +11,7 @@
 import ClubesTabela from '../components/ClubesTabela.vue'
 
 export default {
-    name: ClubesLista,
+    name: 'ClubesLista',
     components: {
         ClubesTabela
     },
