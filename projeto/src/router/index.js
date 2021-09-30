@@ -10,6 +10,11 @@ const routes = [
     name: 'Inicio',
     component: Inicio
   },
+  {
+    path: '/classificacao',
+    name: 'Classificação',
+    component: ClubesLista
+  },
 ]
 
 const router = new VueRouter({
