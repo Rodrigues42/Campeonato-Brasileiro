@@ -45,3 +45,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.top-bar a {
+    text-decoration: none;
+}
+</style>

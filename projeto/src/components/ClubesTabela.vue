@@ -3,10 +3,13 @@
         <template v-slot:default>
             <thead>
                 <tr>
+                    <th colspan="1" class="text-left">
+                        Posição
+                    </th>
                     <th colspan="2" class="text-left">
                         Clube
                     </th>
-                    <th class="text-right">
+                    <th colspan="3" class="text-left">
                         Pontos
                     </th>
                 </tr>
@@ -16,14 +19,15 @@
                     v-for="(time, index) in times"
                     :key="time.id"
                 >
-                    <td>{{ index + 1}}</td>
-                    <td>
+                    <td >{{ index + 1}}</td>
+                    <td >
                         <v-avatar size="20">
                             <img :src="time.escudo" :alt="time.nome"/>
                         </v-avatar>
-                        <span>{{ time.nome }}</span>
+                        <span>{{ "   " + time.nome }}</span>
                     </td>
-                    <td class="text-right">{{ time.pontos }}</td>
+                    <td></td>
+                    <td>{{ time.pontos }}</td>
                 </tr>
             </tbody>
         </template>

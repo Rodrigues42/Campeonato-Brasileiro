@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <h2>
+        <h2 class="Titulo">
             Classificação dos Clubes
         </h2>
         <ClubesTabela :times="TimesOrdenados"/>
